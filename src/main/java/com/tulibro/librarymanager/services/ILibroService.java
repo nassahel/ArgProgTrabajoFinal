@@ -13,11 +13,11 @@ public interface ILibroService {
 	
 	public List<Libro> getAllLibros();
 	
-	public Libro getLibroById(String id);
+	public Libro getLibroById(Integer id);
 	
 	public void updateLibro(Libro libro);
 	
-	public void deleteLibro(String id);
+	public void deleteLibro(Integer id);
 	
 
 }

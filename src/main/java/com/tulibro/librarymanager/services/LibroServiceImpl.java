@@ -28,7 +28,7 @@ public class LibroServiceImpl implements ILibroService{
 	}
 
 	@Override
-	public Libro getLibroById(String id) {
+	public Libro getLibroById(Integer id) {
 		
 		return null;
 	}
@@ -40,7 +40,7 @@ public class LibroServiceImpl implements ILibroService{
 	}
 
 	@Override
-	public void deleteLibro(String id) {
+	public void deleteLibro(Integer id) {
 		
 		
 	}

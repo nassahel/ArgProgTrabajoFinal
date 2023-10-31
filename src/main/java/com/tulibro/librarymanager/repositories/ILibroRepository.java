@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.tulibro.librarymanager.models.Libro;
 
 @Repository
-public interface ILibroRepository extends JpaRepository<Libro, String> {
+public interface ILibroRepository extends JpaRepository<Libro, Integer> {
 
 }
