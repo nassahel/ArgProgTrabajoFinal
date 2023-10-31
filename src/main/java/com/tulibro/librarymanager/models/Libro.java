@@ -25,12 +25,9 @@ public class Libro {
 	
 	
 	public Libro() {
-		super();
 	}
-	public Libro(Integer id, Long isbn, String titulo, Integer anio, Integer ejemplares, Integer ejemplaresPrestados,
+	public Libro(Long isbn, String titulo, Integer anio, Integer ejemplares, Integer ejemplaresPrestados,
 			Integer ejemplaresRestantes, Boolean alta) {
-		super();
-		this.id = id;
 		this.isbn = isbn;
 		this.titulo = titulo;
 		this.anio = anio;
@@ -39,12 +36,14 @@ public class Libro {
 		this.ejemplaresRestantes = ejemplaresRestantes;
 		this.alta = alta;
 	}
+
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
 	}
+	
 	public Long getIsbn() {
 		return isbn;
 	}
@@ -87,6 +86,15 @@ public class Libro {
 	public void setAlta(Boolean alta) {
 		this.alta = alta;
 	}
+	@Override
+	public String toString() {
+		return "Libro [id=" + id + ", isbn=" + isbn + ", titulo=" + titulo + ", anio=" + anio + ", ejemplares="
+				+ ejemplares + ", ejemplaresPrestados=" + ejemplaresPrestados + ", ejemplaresRestantes="
+				+ ejemplaresRestantes + ", alta=" + alta + "]";
+	}
+	
+	
+	
 	
 	
 	
