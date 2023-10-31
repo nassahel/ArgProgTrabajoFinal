@@ -29,19 +29,19 @@ public class LibroServiceImpl implements ILibroService{
 
 	@Override
 	public Libro getLibroById(Integer id) {
-		
-		return null;
+		Libro libro = libroRepository.findById(id).orElse(null);
+		return libro;
 	}
 
 	@Override
 	public void updateLibro(Libro libro) {
-		
+		this.saveLibro(libro);
 		
 	}
 
 	@Override
 	public void deleteLibro(Integer id) {
-		
+		libroRepository.deleteById(id);
 		
 	}
 
